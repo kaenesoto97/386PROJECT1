@@ -1,0 +1,28 @@
+---
+title: "README"
+author: "Kaene Soto," "Jack Bonaci," "Trinity Pickett," "Christelle Matsudo"
+date: "April 17, 2018"
+output: html_document
+---
+
+## R Markdown
+
+1. Import "Panel8595.txt" into Excel
+2. Remove the first two rows from the data
+3. Save as a .csv file
+4. Read "Panel8595.csv"
+5. Create column names based on those given in the original Panel8595.txt file. using colnames()
+6. Create a new data set taking only data from 1987 to compare to entire data set
+7. Properly re-label with detailed descriptions from the 1987 data using colnames()
+8. Remove unneeded variables ("yr87", "yr87") using select()
+9. Convert all energy measures into daily averages by dividing by 365 using the mutate() function
+10. Convert all energy measures into Mwh by dividing by 10^6 using the mutate() function
+11. Convert all heat contents into daily measurements by dividing by 365 using mutate()
+12. Convert all pollutant quantities into daily averages by dividing by 365 using mutute()
+13. Convert all dollar figures to today's currecy by multiplying Capital Stock by 5.52 using the mutate() function
+14. Create the Phase1 dummy variable to see years after 1990 using mutate()
+15. Generate the data as "tidy2.txt"" document using write.table() and file=
+16. Average all variables across all years for each plant for the 11 year period using aggregate() followed by all variable, by=list, mean.
+17. Create another dataset that adds all variables across all variables within a particular year across all 92 plants so that there are 11 rows of observations of relevent variables using aggregate(),by=list,sum
+18. Create a new txt file of the clean data using write.table()
+
